@@ -31,6 +31,10 @@ function install_bin_malditacastillawin() {
 function configure_malditacastillawin() {
     local system="malditacastillawin"
     local malditacastillawin="$romdir/wine/Maldita Castilla (Locomalito).sh"
+    
+    touch config.ini
+    mkUserDir "$md_conf_root/$md_id"
+    moveConfigFile "$md_inst/config.ini" "$md_conf_root/$md_id/config.ini"
 
     #
     # Add Maldita Castilla entry to Wine roms directory in Emulation Station
