@@ -9,6 +9,8 @@
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
+# TODO: Complains "No sound device detected. Sounds might not play." but sounds do play.
+
 rp_module_id="malditacastillawin"
 rp_module_desc="Maldita Castilla by Locomalito"
 rp_module_help=""
