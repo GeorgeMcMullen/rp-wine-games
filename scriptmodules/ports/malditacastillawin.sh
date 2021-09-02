@@ -35,7 +35,8 @@ function configure_malditacastillawin() {
     touch config.ini
     mkUserDir "$md_conf_root/$md_id"
     moveConfigFile "$md_inst/config.ini" "$md_conf_root/$md_id/config.ini"
-
+    chown $user:$user "$md_conf_root/$md_id/config.ini"
+    
     #
     # Add Maldita Castilla entry to Wine roms directory in Emulation Station
     #
